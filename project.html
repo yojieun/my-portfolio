@@ -96,13 +96,16 @@
             <div>
                 <a class="cta" href="https://drive.google.com/open?id=1AvjvUS1lk-bFvy3dU_c09E360SEYgx326SntPkbXxtE" target="_blank">View Survey Analysis</a>
             </div>
-            <div class="survey-graphs">
-                <img src="images/survey-analysis-graph.png" alt="survey analysis graphs">
-            </div>
-            <div class="survey-graphs-mobile">
-                <img src="images/survey-analysis-graph-mobile.png" alt="survey analysis graphs">
-            </div>
             
+            
+            <picture>
+              <source media='(min-width: 600px)'
+                      srcset='images/survey-analysis-graph.png' alt="survey analysis graphs"/>
+              <source media='(max-width: 600px)'
+                      srcset='images/survey-analysis-graph-mobile.png' alt="survey analysis graphs"/>
+              <img src='images/survey-analysis-graph.png' alt="survey analysis graphs"/>
+            </picture>
+    
 
             <article>
                 <h3 class="p-step-first p-step">Competitive Analysis</h3>
@@ -499,7 +502,7 @@
               </div>
             </div>
         </div>
-            
+        
         <div class="container container-small">
             <div class="content-block">
                 <p>Users were able to successfully complete all of the tasks except for one, which was adding a direct reply to a comment. The results were surprising and the degree of confusion was unexpected.
