@@ -58,6 +58,13 @@ body {
 }
 
 @media (max-width: 600px) {
+    .navbar {
+        height: 80px;
+    }
+    #logo img {
+        max-width: 30px;
+    }
+    
     #menu {
         position: fixed;
         display: none;
@@ -123,10 +130,10 @@ body {
 @media (max-width: 600px) {
     .hamburger {
         display: block;
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         position: relative;
-        top: 18px;
+        top: 8px;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
@@ -657,7 +664,17 @@ p strong {
 .column5 img {
   max-width: 100%;
  }
- 
+
+@media (max-width: 700px) { 
+     .four-column-grid {
+    	display: none;
+     }
+    
+    .five-column-grid {
+    	display: none;
+     }
+}
+
 @media (max-width: 600px) { /* Stacked in mobile view */
 	.two-column-grid {
     	display: block;
@@ -680,14 +697,6 @@ p strong {
         flex: 33.33%;
         padding: 20px 0px;
     }
-     
-     .four-column-grid {
-    	display: none;
-     }
-    
-    .five-column-grid {
-    	display: none;
-     }
 }
 /* END - General Image Grid */
 
@@ -712,12 +721,18 @@ p strong {
 }
 
 .scroll-box img {
-    display: flex;
     margin-right: 15px;
-    max-width: 290px;
+    width: 90%;
+    height: auto;
 }
 
 @media (min-width: 600px) {
+    .scroll-box img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 800px) {
     .scroll-box {
         display: none;
     }
