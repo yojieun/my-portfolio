@@ -707,10 +707,12 @@ p strong {
 .scroll-box {
     display: flex;
     overflow-x: auto;
+    flex-wrap: nowrap;
     margin: 20px 0px;
 }
 
 .scroll-box img {
+    display: flex;
     margin-right: 15px;
     max-width: 290px;
 }
