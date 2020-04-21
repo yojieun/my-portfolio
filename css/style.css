@@ -363,7 +363,6 @@ img {
     margin: 0 auto;
 }
 
-
 /*desktop*/
 @media (min-width: 600px) {
     .main-hero .container {
@@ -406,7 +405,17 @@ img {
     }
 }
 
+@media (max-width: 820px) {
+    .main-hero .container {
+        max-width: 555px;
+    }
+}
 
+@media (min-width: 400px) {
+    .main-hero #intro {
+        font-size: 24px;
+    }
+}
 
 
 /* ABOUT PAGE */
@@ -445,10 +454,8 @@ img {
         font-size: 34px;
     }
     
-    #intro {
-        color: #668393;
-        font-size: 20px;
-        padding-bottom: 30px;
+    .about-hero #intro {
+        font-size: 22px;
     }
 }
 
