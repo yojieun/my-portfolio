@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Portfolio | Amy Joe</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/AJ-favicon.png" type="image/gif" sizes="16x16">
  <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/c7b75ba2d6.js" crossorigin="anonymous"></script>
 
@@ -18,14 +19,14 @@
 
 <body>
 <!-- Nav bar -->
-    <nav class="navbar">
+    <nav class="navbar-main">
         <div class="container">
-            <a href="index.html" id="logo"><img src="images/AJ-logo-green.png" alt="personal logo"></a>
+            <a href="index.html" class="mylogo"><img src="images/AJ-logo-gradient.png" alt="personal logo"></a>
             
             <ul id="menu">
                 <li><a href="project.html">Work</a></li>
                 <li><a class="active" href="about.html">About</a></li>
-                <li><a href="mailto:amyjoe.design@gmail.com">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             
             <div class="hamburger">
@@ -43,7 +44,7 @@
         <div class="container container-grid">
             <div>
                 <h1>About Me</h1>
-                <p id="intro">Hi, I’m Amy Joe, a UX Designer based in Chicago with a background in graphic design and eCommerce marketing technologies.</p>
+                <p class="intro">Hi, I’m Amy Joe, a UX Designer based in Chicago with a background in graphic design and eCommerce marketing technologies.</p>
             </div>
             <div> </div>
             <div>
@@ -53,41 +54,41 @@
     </header>
     
     <div class="container container-small">
-        <main class="about">
+        <div class="about">
             <article class="article-about1">
-                <h3 id="about-header">Where I started</h3>
+                <h3 class="about-header">Where I started</h3>
                     <p>Ever since I was young, I had a creative bug in me. I found so much joy in handcrafting, and it led me to pursue an art degree. In art school, I was exposed to all types of mediums and ways of creative expression. During the early years, I had the chance to shadow a graphic designer from Herman Miller. I fell in love with the creative expression used to set a tone, clarity and draw in an audience. It opened my eyes to the world of design, and set my future path.</p>
                 <br>
                     <p>I worked as a Graphic Designer for 10+ years. The first half of my career was in the education industry, starting my journey as a production artist and then a graphic designer. Then finally closing that chapter as a Design and Marketing Technology Manager. I was in charge of designing landing pages, programming customizable templates, and managing the implementation process of portal sites to ensure a successful launch. I met with stakeholders and created project workflows, set timelines for research, ideation, testing and launch. With each project, I had to be the voice of the users, ensuring that they remain as the center focus, along with efficient design solutions.</p>
             </article>
             <article class="article-about2">
-                <h3 id="about-header">Career Shift</h3>
+                <h3 class="about-header">Career Shift</h3>
                     <p>It was the spring of 2018, and I was in a client meeting going over a landing page design they had put together. We were not able to align on the direction of design and layout. It was not very user-friendly, and especially not fitting for their users, who were an older demographic. Personal design preferences were over-taking user preference.</p>
             </article>
-        </main>
+        </div>
     </div>
        <div class="aha-box">
-            <article class="container container-small">
+            <div class="container container-small">
                 <div class="aha-text">
                     <p><strong>This was my aha! moment.</strong> I came to a realization that I was already immersed in user experience, and I wanted to dive in deeper and pursue a career focused more on user-centered design.</p>
                 </div>
-            </article>
+            </div>
        </div>
         <div class="container container-small">
-            <main class="about about-2">
-                <article class="article-about2">
+            <div class="about about-2">
+                <div class="article-about2">
                     <p>A career shift journey began as I realized that I want to be a problem solver that lets the voice and needs of the users be heard. So after many months of wrestling with that thought, I decided to take the giant leap. It was a scary leap that came with a lot of doubts and uncertainty, to make a career shift in my mid-30s. But what gave me strength was the support of my family. I didn’t want to look back at my career and regret not going after my passion. I wanted to be an example to my daughters that you should strive to pursue what you love, and that it’s never too late.</p>
-                </article>
+                </div>
                    <a class="cta" href="https://drive.google.com/open?id=11clijkZZ8c6h3yhmRaGKQr72PRXEASXM" target="_blank">View Resume</a>
-            </main>
+            </div>
         </div>
         
 <!--FOOTER BELOW--> 
     <footer>
-    <h4 id="connect">Let's Connect</h4>
+    <h4 class="connect">Let's Connect</h4>
        <ul class="footer-grid">
         <li>
-            <a href="mailto:amyjoe.design@gmail.com">
+            <a href="contact.html">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
             </a>
            </li>
@@ -113,7 +114,7 @@
     </footer>
     
 
-<script type="text/javascript" src="js/menu.js"></script>
+<script src="js/menu.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163834328-1"></script>

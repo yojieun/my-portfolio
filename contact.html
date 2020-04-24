@@ -4,56 +4,29 @@
         <meta charset="utf-8">
         <title>Portfolio | Amy Joe</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
- <!-- Font Awesome -->
+        <link rel="icon" href="images/AJ-favicon.png" type="image/gif" sizes="16x16">
+  <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/c7b75ba2d6.js" crossorigin="anonymous"></script>
 
     <!-- Custom Styles -->
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
-        
-        
-        <style>
-            .contact-section {
-                background-color: rgba(128, 164, 151, .07);
-                padding-top: 200px;
-                padding-bottom: 120px;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-            
-            .contact-form {
-                background-color: #FFFFFF;
-                max-width: 675px;
-                padding: 20px;
-                margin: 0 auto;
-                display: grid;
-                font-size: 16px;
-                line-height: 150%;
-                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-                border-radius: 10px;
-            }
-            
-            
-            
-            
-
-            
-            
-            
-        </style>
-        
+    
+    <!-- Font Families -->
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+ 
     </head>
 
 <body>
 <!-- Nav bar -->
-    <nav class="navbar">
+    <nav class="navbar-main">
         <div class="container">
-            <a href="index.html" id="logo"><img src="images/AJ-logo-green.png" alt="personal logo"></a>
+            <a href="index.html" class="mylogo"><img src="images/AJ-logo-gradient.png" alt="personal logo"></a>
 
             <ul id="menu">
                 <li><a href="project.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a class="active" href="mailto:amyjoe.design@gmail.com">Contact</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
             </ul>
 
             <div class="hamburger">
@@ -72,149 +45,43 @@
         <div class="contact-form">
             <div>
                 <h1>Get in touch.</h1>
-                <p id="intro">A UX Designer based in Chicago.<br>Creating human-centered design solutions by being the voice of the user.</p>
-            </div>        
+                <p class="intro">I would love to hear from you!</p>
+            </div>     
 
-            <div>
-                
-                
                 <!-- CONTACT FORM -->
-                <form action="https://formspree.io/moqnozeb" method="POST">
-                <div>
+                <form action="https://formspree.io/moqnozeb" method="POST" target="_blank">
+                    <div class="contact-info">
+                        <div class="name">
+                            <label>
+                            Full Name
+                            <input type="text" name="name">
+                            </label>
+                        </div>
+                        <div class="email">
+                            <label>
+                            Email
+                            <input type="text" name="_replyto">
+                            </label>
+                        </div>
+                    </div>
+                <div class="message">
                     <label>
-                    Your name:
-                    <input type="text" name="name">
+                    Message
+                    <textarea class="message-box" name="message"></textarea>
                     </label>
                 </div>
-                <div>
-                    <label>
-                    Your email:
-                    <input type="text" name="_replyto">
-                    </label>
-                </div>
-                <div>
-                    <label>
-                    Your message:
-                    <textarea name="message"></textarea>
-                    </label>
-                </div>
-                <button type="submit">Send</button>
+                <input class="cta" type="submit" value="Send Message">
                 </form>
             </div>
-        </div>
     </header>  
-    
-    
-    
-    
-    <section class="process process-shade">
-        <div class="container container-small">  
-        <article>
-            <h3 class="p-step-first p-step">User Flows &amp; Sitemap</h3>
-            <p>Began sketching out user flows to visualize how users would complete each task. Created many iterations to narrow down a smooth process. User flows were used to create a sitemap that shows how these user flows come together, and establish a hierarchy. With the user flows and sitemaps established, mapped out the content strategy for the application.</p>
-            <a class="cta cta-wide" href="https://drive.google.com/open?id=1d1Imi6kWehfXNfGSMAlGH364WUC8aDWX" target="_blank">View User Flows &amp; Sitemaps</a>
-        </article>
-        </div>  
-        
-        
-        
-        <div class="slideshow-container">
-            <div class="slides">
-
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 5</div>
-          <img src="images/user-flow-organize.png" alt="user-flow: organize">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 5</div>
-          <img src="images/User-flow_save_items.png" alt="user-flow: save items">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 5</div>
-          <img src="images/User-flow_Collaboration.png" alt="user-flow: collaboration">
-        </div>
-            
-        <div class="mySlides fade">
-          <div class="numbertext">4 / 5</div>
-          <img src="images/User-flow_sign-in.png" alt="user-flow: sign-in">
-        </div>
-            
-        <div class="mySlides fade">
-          <div class="numbertext">5 / 5</div>
-          <img src="images/site-map.png" alt="site map">
-        </div>
-</div>
-            
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        </div>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        
-        <br>
-        
-        <div class="slideshow-container">
-            <div class="slides">
-
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 5</div>
-          <img src="images/user-flow-organize.png" alt="user-flow: organize">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 5</div>
-          <img src="images/User-flow_save_items.png" alt="user-flow: save items">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 5</div>
-          <img src="images/User-flow_Collaboration.png" alt="user-flow: collaboration">
-        </div>
-            
-        <div class="mySlides fade">
-          <div class="numbertext">4 / 5</div>
-          <img src="images/User-flow_sign-in.png" alt="user-flow: sign-in">
-        </div>
-            
-        <div class="mySlides fade">
-          <div class="numbertext">5 / 5</div>
-          <img src="images/site-map.png" alt="site map">
-        </div>
-</div>
-            
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        </div>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        
-        
-    </section>
-    
     
     
 <!--FOOTER BELOW-->
     <footer>
-    <h4 id="connect">Let's Connect</h4>
+    <h4 class="connect">Let's Connect</h4>
        <ul class="footer-grid">
         <li>
-            <a href="mailto:amyjoe.design@gmail.com">
+            <a href="contact.html">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
             </a>
            </li>
@@ -239,7 +106,7 @@
         <p>©2020 Coded &amp; Designed by Amy Joe</p>
     </footer>
 
-<script type="text/javascript" src="js/menu.js"></script>
+<script src="js/menu.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163834328-1"></script>

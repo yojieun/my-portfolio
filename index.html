@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Portfolio | Amy Joe</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/AJ-favicon.png" type="image/gif" sizes="16x16">
  <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/c7b75ba2d6.js" crossorigin="anonymous"></script>
 
@@ -13,19 +14,20 @@
     
     <!-- Font Families -->
         <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-        
-    </head>  
-
+       
+    </head>
+    
+       
 <body>
 <!-- Nav bar -->
-    <nav class="navbar">
+    <nav class="navbar-main">
         <div class="container">
-            <a href="index.html" id="logo"><img src="images/AJ-logo-green.png" alt="personal logo"></a>
+            <a href="index.html" class="mylogo"><img src="images/AJ-logo-gradient.png" alt="personal logo"></a>
             
             <ul id="menu">
                 <li><a href="project.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="mailto:amyjoe.design@gmail.com">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             
             <div class="hamburger">
@@ -42,7 +44,7 @@
     <header class="main-hero">
         <div class="container">
             <h1>Hi, I'm Amy.</h1>
-            <p id="intro">A UX Designer based in Chicago.<br>Creating human-centered design solutions by being the voice of the user.</p>
+            <p class="intro">A UX Designer based in Chicago.<br>Creating human-centered design solutions by being the voice of the user.</p>
             <a class="cta" href="about.html">Learn More About Me</a>
         </div>
         <div class="arrow">
@@ -52,7 +54,7 @@
     
     <section class="recent-section">
         <div class="container">
-            <h4 id="recent">Recent Project</h4>
+            <h4 class="recent">Recent Project</h4>
         </div>
     </section>
     
@@ -71,10 +73,10 @@
         
 <!--FOOTER BELOW--> 
     <footer>
-    <h4 id="connect">Let's Connect</h4>
+    <h4 class="connect">Let's Connect</h4>
        <ul class="footer-grid">
         <li>
-            <a href="mailto:amyjoe.design@gmail.com">
+            <a href="contact.html">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
             </a>
            </li>
@@ -100,7 +102,7 @@
     </footer>
     
     
-<script type="text/javascript" src="js/menu.js"></script>
+<script src="js/menu.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163834328-1"></script>
