@@ -249,7 +249,7 @@ body {
     background-position: center;
     
     padding-top: 160px;
-    padding-bottom: 0px;
+    padding-bottom: 80px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -275,13 +275,15 @@ body {
 }
 
 .recent-section {
-    background-color: rgba(128, 164, 151, 0.5);
+    /*background-color: rgba(128, 164, 151, 0.5);*/
     padding: 20px;
 }
 
 .recent {
-    color: #FFFFFF;
-    font-size: 24px;
+    color: rgba(58, 58, 58, 0.7);
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 .recent-project {
@@ -363,6 +365,11 @@ h5 {
     max-width: 250px;
 }
 
+.pricehawk-hero .cta-hero { /* for project prototype link */
+    border: 2px solid #64A225;
+    color: #64A225;
+}
+
 a {
   text-decoration: none;
 }
@@ -381,7 +388,8 @@ img {
     
     .main-hero {
         background-image: url("../images/main-background.png");
-        padding-top: 180px;
+        padding-top: 190px;
+        padding-bottom: 0px;
     }
     
     .intro {
@@ -396,8 +404,18 @@ img {
         font-size: 36px;
     }
     
+    .home img {
+        padding-right: 30px;
+        padding-bottom: 70px;
+    }
+    
+    .home .container-grid {
+        display: grid;
+        grid-template-columns: 50% 45%;
+    }
+    
     .recent {
-        font-size: 26px;
+        font-size: 24px;
     }
     
     .recent-project {
@@ -517,9 +535,18 @@ p strong {
 
 /* CASE STUDY PAGE */
 
-.hero {
+.binder-hero {
     background-image: url("../images/binder-hero-img-mobile.png");
     background-repeat:no-repeat;
+    margin-top: 80px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.pricehawk-hero {
+    background-image: url("../images/pricehawk/pricehawk-hero-img-mobile.png");
+    background-repeat:no-repeat;
+    background-position: center;
     margin-top: 80px;
     padding-top: 80px;
     padding-bottom: 40px;
@@ -531,11 +558,20 @@ p strong {
 }
 
 @media (min-width: 600px) {
-    .hero {
+    .binder-hero {
         background-image: url("../images/binder-hero-img.png");
         background-repeat:no-repeat;
         margin-top: 100px;
     }
+    
+    .pricehawk-hero {
+        background-image: url("../images/pricehawk/pricehawk-hero-img.png");
+        background-repeat:no-repeat;
+        background-color: white;
+        background-position: center top;
+        margin-top: 100px;
+    }
+    
     .column-2 {
         padding: 20px;
     }
@@ -559,6 +595,24 @@ p strong {
     font-size: 22px;
     padding-bottom: 30px;
     text-align: center;
+}
+
+.pricehawk-hero .p-name {
+    color: #64A225;
+}
+
+.pricehawk-hero .p-intro {
+    color: #4d4d4d;
+    font-size: 20px;
+}
+
+.pricehawk-hero .p-intro b {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.space {
+    padding: 110px;
 }
 
 .overview {
@@ -590,7 +644,7 @@ p strong {
     grid-column: 2;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) {    
    .summary {
         display: grid;
     }
@@ -762,6 +816,11 @@ p strong {
     padding: 20px;
 }
 
+.comp-logo#pricehawk {
+    padding: 5px;
+    width: 80%;
+}
+
 
 /* START - IMAGE GALLERY */
 
@@ -818,6 +877,7 @@ p strong {
 }
 
 table {
+    margin: 0 auto;
     border-collapse: collapse;
 }
 
@@ -869,6 +929,17 @@ table tr:nth-child(odd) {
         width: 50%;
     }
     
+    .comp-logo#pricehawk {
+        padding: 10px;
+        width: 90%;
+    }
+    
+    .comp-logo-grid-p {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        margin: 0 auto;
+    }
+
     .detail-callout {   /* feature detail snapshots */
         display: grid;
         grid-template-columns: 31.33% 3% 31.33% 3% 31.33%;
@@ -878,13 +949,18 @@ table tr:nth-child(odd) {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
     }
+    
+    #five.static-gallery {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
 
     .static-gallery img {
         padding-top: 20px;
         padding-right: 20px;
     }
 
-    .static-gallery img.last {
+    img.last .static-gallery {
         padding-right: 0px;
     }
 }
